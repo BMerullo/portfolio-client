@@ -70,6 +70,7 @@ const Footer = (props) => {
                   github
                 </a>
               </li>
+              <Lin to="/admn-login">Admin Page</Lin>
             </div>
           </ul>
         </div>
