@@ -30,7 +30,7 @@ const UpdateWeb = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/web/${id}`)
+      .get(`https://bob-merullo-server.herokuapp.com/api/web/${id}`)
       .then((res) => {
         console.log(res.data);
         setUpdatedWeb(res.data);
@@ -50,7 +50,7 @@ const UpdateWeb = (props) => {
     // setUpdatedProject(formData);
 
     axios
-      .put(`http://localhost:8000/api/web/${id}`, formData, {
+      .put(`https://bob-merullo-server.herokuapp.com/web/${id}`, formData, {
         withCredentials: true,
       })
       .then((res) => {
@@ -68,7 +68,7 @@ const UpdateWeb = (props) => {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:8000/api/users/logout",
+        "https://bob-merullo-server.herokuapp.com/users/logout",
         {},
         {
           withCredentials: true,
@@ -86,7 +86,7 @@ const UpdateWeb = (props) => {
 
   const deleteFilter = (setupId) => {
     axios
-      .delete(`http://localhost:8000/api/web/${id}`)
+      .delete(`https://bob-merullo-server.herokuapp.com/web/${id}`)
       .then((res) => {
         console.log(res.data);
         setStateChange(stateChange + 1);

@@ -38,7 +38,7 @@ const ProjectForm = (props) => {
     console.log(project.image);
 
     axios
-      .post("http://localhost:8000/api/projects", formData, {
+      .post("https://bob-merullo-server.herokuapp.com/projects", formData, {
         withCredentials: true,
       })
       .then((res) => {
@@ -54,7 +54,7 @@ const ProjectForm = (props) => {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:8000/api/users/logout",
+        "https://bob-merullo-server.herokuapp.com/users/logout",
         {},
         {
           withCredentials: true,
