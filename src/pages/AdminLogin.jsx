@@ -33,6 +33,7 @@ const AdminLogin = (props) => {
       })
       .catch((err) => {
         console.log(err);
+        console.log("login not working");
       });
   };
 
