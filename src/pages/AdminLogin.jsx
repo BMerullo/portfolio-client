@@ -14,7 +14,7 @@ const AdminLogin = (props) => {
     e.preventDefault();
     axios
       .post(
-        "https://bob-merullo-server.herokuapp.com/api/login",
+        "https://bob-merullo-server.herokuapp.com/api/users/login",
         {
           username,
           password,
