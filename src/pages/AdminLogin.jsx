@@ -32,7 +32,7 @@ const AdminLogin = (props) => {
         navigate(`/admn-portal/${localStorage.userId}`);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err, "this is the error");
         console.log("login not working");
       });
   };
