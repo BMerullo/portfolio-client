@@ -20,7 +20,7 @@ function App() {
   const [stateChange, setStateChange] = useState(1);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/projects/`)
+      .get(`https://bob-merullo-server.herokuapp.com/api/projects/`)
       .then((res) => {
         console.log(res.data);
         setProjectList(res.data);
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/web/`)
+      .get(`https://bob-merullo-server.herokuapp.com/api/web/`)
       .then((res) => {
         console.log(res.data);
         setWebList(res.data);
