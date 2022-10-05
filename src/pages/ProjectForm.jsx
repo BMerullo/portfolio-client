@@ -38,7 +38,7 @@ const ProjectForm = (props) => {
     console.log(project.image);
 
     axios
-      .post("https://bob-merullo-server.herokuapp.com/projects", formData, {
+      .post("https://bob-merullo-server.herokuapp.com/api/projects", formData, {
         withCredentials: true,
       })
       .then((res) => {
