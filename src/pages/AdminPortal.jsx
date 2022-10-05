@@ -15,7 +15,7 @@ const AdminPortal = (props) => {
     e.preventDefault();
     axios
       .post(
-        "https://bob-merullo-server.herokuapp.com/logout",
+        "https://bob-merullo-server.herokuapp.com/api/logout",
         {},
         {
           withCredentials: true,
