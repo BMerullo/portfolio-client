@@ -12,6 +12,7 @@ import UpdateProject from "./pages/UpdateProject";
 import WebForm from "./pages/WebForm";
 import UpdateWeb from "./pages/UpdateWeb";
 import axios from "axios";
+import UserRegister from "./pages/UserRegister";
 
 function App() {
   const title = "Bob Merullo";
@@ -89,6 +90,7 @@ function App() {
           }
         />
       </Routes>
+      <Routes path="/register" element={<UserRegister />}></Routes>
     </div>
   );
 }
