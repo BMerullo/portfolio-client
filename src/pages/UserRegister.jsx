@@ -44,7 +44,7 @@ const UserRegister = () => {
             <input
               className="input"
               type="text"
-              name="title"
+              name="username"
               value={user.username}
               placeholder="username"
               onChange={handleChange}
