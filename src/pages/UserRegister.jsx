@@ -26,7 +26,11 @@ const UserRegister = () => {
     formData.append("confirmPassword", user.confirmPassword);
 
     axios
-      .post("https://bob-merullo-server.herokuapp.com/api/users", formData, {})
+      .post(
+        "https://bob-merullo-server.herokuapp.com/api/users/register",
+        formData,
+        {}
+      )
       .then((res) => {
         console.log(res);
         navigate(`/admn-portal/${localStorage.userId}`);
