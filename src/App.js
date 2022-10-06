@@ -89,8 +89,8 @@ function App() {
             />
           }
         />
+        <Route path="/register" element={<UserRegister />} />
       </Routes>
-      <Routes path="/register" element={<UserRegister />}></Routes>
     </div>
   );
 }
