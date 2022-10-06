@@ -9,6 +9,7 @@ const AdminPortal = (props) => {
   const btnLink = [
     `/project-form/${localStorage.userId}`,
     `/web-form/${localStorage.userId}`,
+    "/register",
   ];
 
   const logout = (e) => {
@@ -53,6 +54,12 @@ const AdminPortal = (props) => {
                 onClick={() => navigateTo(btnLink[1])}
               >
                 new web
+              </button>
+              <button
+                className="admin-btn"
+                onClick={() => navigateTo(btnLink[2])}
+              >
+                register
               </button>
               <button className="admin-btn" onClick={logout}>
                 logout
