@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const UserRegister = () => {
-  const [localStorageId, setLocalStorageId] = useState("");
+  // const [localStorageId, setLocalStorageId] = useState("");
   const navigate = useNavigate();
   const [user, setUser] = useState({
     username: "",
@@ -36,8 +36,8 @@ const UserRegister = () => {
       )
       .then((res) => {
         console.log(res);
-        localStorage.setItem("userId", res.data.userId);
-        setLocalStorageId(res.data.userId);
+        // localStorage.setItem("userId", res.data.userId);
+        // setLocalStorageId(res.data.userId);
         navigate(`/admn-portal/${localStorage.userId}`);
       })
       .catch((err) => {
