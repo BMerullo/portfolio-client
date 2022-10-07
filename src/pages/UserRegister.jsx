@@ -28,15 +28,14 @@ const UserRegister = () => {
     axios
       .post(
         "https://bob-merullo-server.herokuapp.com/api/users/register",
-        formData,
-        {}
+        formData
       )
       .then((res) => {
         console.log(res);
         navigate(`/admn-portal/${localStorage.userId}`);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err, "this is the error");
       });
   };
   return (
