@@ -51,8 +51,8 @@ const ProjectFormComponent = (props) => {
               />
             </div>
           </div>
-          <label>{submitLabel} image</label>
-          {/* <div>
+          {/* <label>{submitLabel} image</label>
+          <div>
             <input
               className="input"
               accept=".png, .jpg, .jpeg"
