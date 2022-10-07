@@ -13,7 +13,7 @@ const ProjectForm = (props) => {
     url: "",
     // image: "",
   });
-  console.log(project.image);
+  // console.log(project.image);
 
   const handleChange = (e) => {
     setProject({
@@ -22,10 +22,10 @@ const ProjectForm = (props) => {
     });
   };
 
-  const imageChange = (e) => {
-    setProject({ ...project, image: e.target.files[0] });
-    console.log(project.image);
-  };
+  // const imageChange = (e) => {
+  //   setProject({ ...project, image: e.target.files[0] });
+  //   console.log(project.image);
+  // };
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -39,14 +39,14 @@ const ProjectForm = (props) => {
 
     axios
       .post("https://bob-merullo-server.herokuapp.com/api/projects", project, {
-        withCredentials: false,
+        // withCredentials: true,
       })
       .then((res) => {
         console.log(res);
         navigate(`/admn-portal/${localStorage.userId}`);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err, "this is the error you are looking for");
       });
   };
 
