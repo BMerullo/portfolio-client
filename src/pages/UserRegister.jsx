@@ -20,15 +20,15 @@ const UserRegister = () => {
 
   const register = (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("username", user.username);
-    formData.append("password", user.password);
-    formData.append("confirmPassword", user.confirmPassword);
+    // const formData = new FormData();
+    // formData.append("username", user.username);
+    // formData.append("password", user.password);
+    // formData.append("confirmPassword", user.confirmPassword);
 
     axios
       .post(
         "https://bob-merullo-server.herokuapp.com/api/users/register",
-        formData,
+        user,
         {
           withCredentials: true,
         }
