@@ -54,7 +54,7 @@ const ProjectForm = (props) => {
     e.preventDefault();
     axios
       .post(
-        "https://bob-merullo-server.herokuapp.com/users/api/logout",
+        "https://bob-merullo-server.herokuapp.com/api/users/logout",
         {},
         {
           withCredentials: true,
