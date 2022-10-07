@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const AdminLogin = (props) => {
-  // const { id } = props;
   const [localStorageId, setLocalStorageId] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
