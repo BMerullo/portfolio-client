@@ -39,7 +39,7 @@ const ProjectForm = (props) => {
 
     axios
       .post("https://bob-merullo-server.herokuapp.com/api/projects", project, {
-        withCredentials: true,
+        withCredentials: false,
       })
       .then((res) => {
         console.log(res);
