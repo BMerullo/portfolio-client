@@ -52,7 +52,7 @@ const ProjectFormComponent = (props) => {
             </div>
           </div>
           <label>{submitLabel} image</label>
-          <div>
+          {/* <div>
             <input
               className="input"
               accept=".png, .jpg, .jpeg"
@@ -61,7 +61,7 @@ const ProjectFormComponent = (props) => {
               value={null}
               onChange={imageChange}
             />
-          </div>
+          </div> */}
           <div className="form-flex">
             <button className="submit-btn" type="submit">
               {submitLabel}

@@ -11,7 +11,7 @@ const ProjectForm = (props) => {
     title: "",
     description: "",
     url: "",
-    image: "",
+    // image: "",
   });
   console.log(project.image);
 
