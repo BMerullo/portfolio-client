@@ -28,7 +28,10 @@ const UserRegister = () => {
     axios
       .post(
         "https://bob-merullo-server.herokuapp.com/api/users/register",
-        formData
+        formData,
+        {
+          withCredentials: true,
+        }
       )
       .then((res) => {
         console.log(res);
