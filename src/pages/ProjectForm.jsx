@@ -29,17 +29,17 @@ const ProjectForm = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("image", project.image);
-    formData.append("title", project.title);
-    formData.append("url", project.url);
-    formData.append("description", project.description);
+    // const formData = new FormData();
+    // formData.append("image", project.image);
+    // formData.append("title", project.title);
+    // formData.append("url", project.url);
+    // formData.append("description", project.description);
 
     console.log(project.image);
 
     axios
-      .post("https://bob-merullo-server.herokuapp.com/api/projects", formData, {
-        withCredentials: false,
+      .post("https://bob-merullo-server.herokuapp.com/api/projects", project, {
+        withCredentials: true,
       })
       .then((res) => {
         console.log(res);
