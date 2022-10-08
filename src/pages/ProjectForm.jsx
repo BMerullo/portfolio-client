@@ -22,14 +22,14 @@ const ProjectForm = (props) => {
     });
   };
 
-  // const imageChange = (e) => {
-  //   setProject({ ...project, image: e.target.files[0] });
-  //   console.log(project.image);
-  // };
+  const imageChange = (e) => {
+    setProject({ ...project, image: e.target.files[0] });
+    console.log(project.image);
+  };
 
   const submitHandler = (e) => {
     e.preventDefault();
-    // const formData = new FormData();
+    const formData = new FormData();
     // formData.append("image", project.image);
     // formData.append("title", project.title);
     // formData.append("url", project.url);
@@ -39,7 +39,7 @@ const ProjectForm = (props) => {
 
     axios
       .post("https://bob-merullo-server.herokuapp.com/api/projects", project, {
-        // withCredentials: true,
+        withCredentials: true,
       })
       .then((res) => {
         console.log(res);

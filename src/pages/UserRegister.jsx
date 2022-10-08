@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const UserRegister = () => {
-  // const [localStorageId, setLocalStorageId] = useState("");
   const navigate = useNavigate();
   const [user, setUser] = useState({
     username: "",
