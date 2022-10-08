@@ -35,6 +35,7 @@ const UserRegister = () => {
       )
       .then((res) => {
         console.log(res);
+        console.log(req.cookies.usertoken);
         // localStorage.setItem("userId", res.data.userId);
         // setLocalStorageId(res.data.userId);
         navigate(`/admn-portal/${localStorage.userId}`);
